@@ -408,7 +408,33 @@ a {
     color: var(--color-text-primary);
 }
 
+.headline-rotate {
+    display: block;
+    position: relative;
+    height: 1.2em;
+    overflow: hidden;
+    margin-bottom: 0.1em;
+}
+
+.rotate-word {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.rotate-word.active {
+    position: relative;
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .headline-accent {
+    display: block;
     color: var(--color-accent-gold);
     font-style: italic;
 }

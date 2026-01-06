@@ -185,6 +185,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // --- Hero headline text rotation ---
+    const rotateWords = document.querySelectorAll('.rotate-word');
+
+    if (rotateWords.length > 0) {
+        let currentIndex = 0;
+
+        setInterval(() => {
+            rotateWords[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % rotateWords.length;
+            rotateWords[currentIndex].classList.add('active');
+        }, 3000);
+    }
+
     // --- Application Form mailto handler ---
     const applicationForm = document.getElementById('applicationForm');
 
