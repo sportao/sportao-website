@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apply for the CRO Lead position at DL Media.">
+    <title>Apply: CRO Lead | DL Media</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Grain Overlay -->
+    <div class="grain-overlay"></div>
+
+    <header class="main-header">
+        <div class="header-content">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">◆</span>
+                <span class="logo-text">Sportao</span>
+            </a>
+            <nav class="nav-links">
+                <a href="index.html#journey">The Journey</a>
+                <a href="index.html#model">Our Model</a>
+                <a href="index.html#partners">Who We Partner With</a>
+                <div class="nav-dropdown">
+                    <a href="case-studies.html">Case Studies</a>
+                    <div class="nav-dropdown-content">
+                        <p>See how Sportao partners with ambitious and collaborative eCommerce Founders.</p>
+                    </div>
+                </div>
+                <a href="grow-with-us.html">Grow with Us</a>
+            </nav>
+            <a href="index.html#contact" class="btn btn-primary">Partner With Us</a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="application-page">
+            <div class="container">
+                <div class="application-header">
+                    <a href="grow-with-us.html" class="back-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 12H5M12 19l-7-7 7-7"/>
+                        </svg>
+                        Back to Open Positions
+                    </a>
+                    <div class="position-meta">
+                        <span class="position-tag">DL Media</span>
+                        <span class="position-type">Fractional</span>
+                        <span class="position-location">Remote</span>
+                    </div>
+                    <h1>CRO Lead</h1>
+                    <p class="position-summary">Find where money is leaking in the funnel. Own conversion optimization and turn more traffic into profitable revenue.</p>
+                </div>
+
+                <form class="application-form" id="applicationForm" data-role="CRO Lead">
+
+                    <div class="form-section">
+                        <h3>Personal Details</h3>
+
+                        <div class="form-group">
+                            <label for="name">Full Name <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required placeholder="Your full name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required placeholder="you@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="linkedin">LinkedIn Profile URL <span class="required">*</span></label>
+                            <input type="url" id="linkedin" name="linkedin" required placeholder="https://linkedin.com/in/yourprofile">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="location">Where are you located? <span class="required">*</span></label>
+                            <input type="text" id="location" name="location" required placeholder="City, Country">
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Professional Details</h3>
+
+                        <div class="form-group">
+                            <label for="resume">Resume / CV</label>
+                            <div class="file-upload">
+                                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+                                <span class="file-upload-text">Drop your file here or click to upload</span>
+                            </div>
+                            <span class="form-hint">PDF or Word document (optional)</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Video Introduction <span class="required">*</span></label>
+                            <div class="video-prompt">
+                                <p>Record a 3-5 minute video (Loom, YouTube, or similar) addressing:</p>
+                                <ul>
+                                    <li>What attracted you to this CRO-focused role?</li>
+                                    <li>Walk us through one conversion optimization win you owned—what was the hypothesis, how did you test it, and what was the measurable impact?</li>
+                                    <li>If you landed on a $3M eCommerce store for the first time, what's the first thing you'd analyze to find conversion leaks?</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="video_link">Video Link <span class="required">*</span></label>
+                            <input type="url" id="video_link" name="video_link" required placeholder="https://www.loom.com/share/...">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="salary">What monthly rate (USD) are you looking for? <span class="required">*</span></label>
+                            <input type="text" id="salary" name="salary" required placeholder="e.g., $4,000 - $6,000/month">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="availability">What is your current availability and earliest start date? <span class="required">*</span></label>
+                            <input type="text" id="availability" name="availability" required placeholder="e.g., 20 hours/week, available to start Feb 1">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="question">What's the most common place you see eCommerce stores leaving money on the table in their funnel?</label>
+                            <textarea id="question" name="question" rows="4" placeholder="3-5 sentences max"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-large">
+                            Submit Application
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-bottom" style="border-top: none; padding-top: 0;">
+                <p>&copy; 2025 Sportao. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
